@@ -29,7 +29,7 @@
 						</tr>
 					</thead>
 					
-					<tbody class="viewtbody">	
+					<tbody class="membertbody">	
 						
 					</tbody>
 				</table>
@@ -39,6 +39,8 @@
 		<jsp:include page="/hrdkorea/footer.jsp"></jsp:include>
 	</div>
 	
-	<script src="member.js"></script>
+	<script src="./js/index.js"></script>
+	<script> memberFindAll() </script>
+	
 </body>
 </html>

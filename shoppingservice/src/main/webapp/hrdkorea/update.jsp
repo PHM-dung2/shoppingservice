@@ -14,41 +14,41 @@
 		<jsp:include page="/hrdkorea/menu.jsp"></jsp:include>
 		
 		<div id="index">
-			<h2> 홈쇼핑 회원 등록 </h2>
+			<h2> 홈쇼핑 회원 정보 수정 </h2>
 			<div>
 				<table border="1">
 					<tr>
 						<th> 회원번호(자동발생) </th>
-						<td width="400px"> <input maxlength="6" /> </td>
+						<td width="400px"> <input class="custnoInput" maxlength="6" disabled="disabled"/> </td>
 					</tr>
 					<tr>
 						<th> 회원성명 </th>
-						<td> <input type="text" maxlength="20" /> </td>
+						<td> <input class="custnameInput" type="text" maxlength="20" /> </td>
 					</tr>
 					<tr>
 						<th> 회원전화 </th>
-						<td> <input width="150px" type="tel" maxlength="13" /> </td>
+						<td> <input class="phoneInput" type="tel" maxlength="13" placeholder="예: 010-1234-5678" /> </td>
 					</tr>
 					<tr>
 						<th> 회원주소 </th>
-						<td> <input width="200px" type="text" maxlength="60" /> </td>
+						<td> <input class="addressInput" Style="width: 250px;" type="text" maxlength="60" /> </td>
 					</tr>
 					<tr>
 						<th> 가입일자 </th>
-						<td> <input type="text" /> </td>
+						<td> <input class="joindateInput" type="text" /> </td>
 					</tr>
 					<tr>
 						<th> 고객등급 [ A:VIP, B:일반, C:직원 ] </th>
-						<td> <input type="text" maxlength="1" /> </td>
+						<td> <input class="gradeInput" type="text" maxlength="1" /> </td>
 					</tr>
 					<tr>
 						<th> 도시코드 </th>
-						<td> <input maxlength="2" /> </td>
+						<td> <input class="cityInput" maxlength="2" /> </td>
 					</tr>
 					<tr>
 						<td class="btn" colspan="2">
-							<button onclick="" type="button" > 등록 </button>
-							<button onclick="location.href='memberview.jsp'" type="button" > 조회 </button>
+							<button onclick="memberUpdate()" type="button" > 수 정 </button>
+							<button onclick="location.href='memberview.jsp'" type="button" > 조 회 </button>
 						</td>
 					</tr>
 				</table>
@@ -58,7 +58,8 @@
 		<jsp:include page="/hrdkorea/footer.jsp"></jsp:include>
 	</div>
 	
-	<script src="member.js"></script>
+	<script src="./js/index.js"></script>
+	<script> memberFind() </script>
 
 </body>
 </html>

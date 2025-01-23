@@ -16,7 +16,20 @@
 		<div id="index">
 			<h2> 회원매출조회 </h2>
 			<div>
-			
+				<table class="viewtable" border="1">
+					<thead>
+						<tr>
+							<th> 회원번호 </th>
+							<th> 회원성명 </th>
+							<th width="150px"> 고객등급 </th>
+							<th width="150px"> 매출 </th>
+						</tr>
+					</thead>
+					
+					<tbody class="moneytbody">	
+						
+					</tbody>
+				</table>
 			</div>
 		</div>
 		

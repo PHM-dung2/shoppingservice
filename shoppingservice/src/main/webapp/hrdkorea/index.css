@@ -7,13 +7,17 @@
 li{ list-style: none; }
 a{ color: black; text-decoration: none }
 
+/* 공통 */
 #header , #footer{
 	background-color: #3557d5;
 	text-align: center;
 	color: white;
 }
+
+/* 헤더 */
 #header > h1{ padding: 20px 0px; }
 
+/* 메뉴 */
 #menu{
 	background-color: #8f8ce7;
 	color: white;
@@ -22,6 +26,7 @@ a{ color: black; text-decoration: none }
 #menu li{ display: inline-block; } 		/* li 가로정렬 */
 #menu a{ display: block; color: white; padding : 5px 10px; }
 
+/* 본문 */
 #index{
 	background-color: #e5e5e5;
 	padding: 20px 0px;
@@ -35,7 +40,10 @@ a{ color: black; text-decoration: none }
 }
 #index th , td{	padding: 3px; }
 #index .btn{ text-align: center; }
+.btn button{ padding: 3px 10px;}
 
 #index .viewtable > tbody > tr{ text-align: center; }
+#index a:hover { text-decoration: underline; color: gray; }
 
+/* 푸터 */
 #footer{ padding: 20px; }

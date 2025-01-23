@@ -17,7 +17,7 @@ public class MemberDao extends Dao{
 //	1. 회원 등록
 	public boolean memberWrite( MemberDto memberDto ) {
 		try {
-			String sql = "insert into MEMBER_TBL_02 value( ? ,? , ? , ? , ? , ? , ? )";
+			String sql = "insert into MEMBER_TBL_02 value( ? , ? , ? , ? , ? , ? , ? )";
 			PreparedStatement ps = conn.prepareStatement(sql);
 				ps.setInt(1, memberDto.getCustno());
 				ps.setString(2, memberDto.getCustname());

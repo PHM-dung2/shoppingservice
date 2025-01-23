@@ -9,7 +9,7 @@ public class Dao {
 	protected Dao() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost/shopservice" , "root" , "1234");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/shoppingservice" , "root" , "1234");
 		}catch( Exception e ) { System.out.println(e); }
 	}
 	private static Dao instance = new Dao();
