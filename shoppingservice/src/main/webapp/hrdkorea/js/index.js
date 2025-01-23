@@ -161,8 +161,7 @@ const moneyFindAll = () => {
 	let moneytbody = document.querySelector('.moneytbody');
 	
 	let html = '';
-	let arr = new Array;
-	
+		
 	const option = { method : 'GET' }
 	fetch( `/shoppingservice/hrdkorea/money` , option )
 		.then( e => e.json() )
@@ -174,9 +173,10 @@ const moneyFindAll = () => {
 							<td> ${ obj.custno } </td>
 							<td> ${ obj.custname } </td>
 							<td> ${ grade } </td>
-							<td> ${ obj } </td>
+							<td> ${ obj.매출 } </td>
 						</tr>`
 			}) // for end
+			moneytbody.innerHTML = html;
 		}) // then end
 } // f end
 

@@ -45,3 +45,6 @@ commit;
 
 SELECT * FROM MEMBER_TBL_02;
 SELECT * FROM MONEY_TBL_02;
+
+select me.custno , me.custname , me.grade , sum(mo.price) 매출합계 from MEMBER_TBL_02 me join MONEY_TBL_02 mo on me.custno = mo.custno 
+group by me.custno , me.custname , me.grade order by 매출합계 desc;

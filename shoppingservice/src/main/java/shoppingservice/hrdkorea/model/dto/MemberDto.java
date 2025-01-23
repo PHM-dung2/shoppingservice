@@ -9,19 +9,21 @@ public class MemberDto {
 	private String joindate;
 	private String grade;
 	private String city;
+	private int 매출;
 //	2. 생성자
 	public MemberDto() {}
-	public MemberDto(int custno, String custname, String phone, String address, String joindate, String grade,
-			String city) {
-		super();
-		this.custno = custno;
-		this.custname = custname;
-		this.phone = phone;
-		this.address = address;
-		this.joindate = joindate;
-		this.grade = grade;
-		this.city = city;
-	}
+	public MemberDto(int custno, String custname, String phone, String address, String joindate, String grade, String city,
+		int 매출) {
+	super();
+	this.custno = custno;
+	this.custname = custname;
+	this.phone = phone;
+	this.address = address;
+	this.joindate = joindate;
+	this.grade = grade;
+	this.city = city;
+	this.매출 = 매출;
+}
 //	3. 메소드
 	public int getCustno() {
 		return custno;
@@ -65,10 +67,18 @@ public class MemberDto {
 	public void setCity(String city) {
 		this.city = city;
 	}
+	
+	public int get매출() {
+		return 매출;
+	}
+	public void set매출(int 매출) {
+		this.매출 = 매출;
+	}
 	@Override
 	public String toString() {
 		return "MemberDto [custno=" + custno + ", custname=" + custname + ", phone=" + phone + ", address=" + address
-				+ ", joindate=" + joindate + ", grade=" + grade + ", city=" + city + "]";
+				+ ", joindate=" + joindate + ", grade=" + grade + ", city=" + city + ", 매출=" + 매출 + "]";
 	}
+	
 	
 }

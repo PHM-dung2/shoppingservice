@@ -36,5 +36,7 @@
 		<jsp:include page="/hrdkorea/footer.jsp"></jsp:include>
 	</div> 
 
+	<script src="./js/index.js"></script>
+	<script> moneyFindAll() </script>
 </body>
 </html>

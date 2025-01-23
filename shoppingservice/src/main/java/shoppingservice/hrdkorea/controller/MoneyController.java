@@ -11,14 +11,14 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import shoppingservice.hrdkorea.model.dao.MoneyDao;
-import shoppingservice.hrdkorea.model.dto.MoneyDto;
+import shoppingservice.hrdkorea.model.dto.MemberDto;
 
 @WebServlet("/hrdkorea/money")
 public class MoneyController extends HttpServlet{
 //	1. 회원매출 조회
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		ArrayList<MoneyDto> result = MoneyDao.getinstance().moneyFindAll();
+		ArrayList<MemberDto> result = MoneyDao.getinstance().moneyFindAll();
 			ObjectMapper mapper = new ObjectMapper();
 			String jsonResult = mapper.writeValueAsString(result);
 		resp.setContentType( "application/json" );
